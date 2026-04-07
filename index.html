@@ -1,96 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uwimpuhwe Gisele Portfolio</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio website</title>
 </head>
+<body>
+     <h1>My portifolio website</h1> 
+     <img src="gigi passport_7134_111008.jpg.jpeg" width="300" alt="Gisele passport photo">
+<head>
 
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
 <!-- NAVBAR -->
-<header id="navbar">
-  <div class="container nav-inner">
-    <div class="logo">Gisele</div>
-
+<header>
     <nav>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <h2>Gisele</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-  </div>
 </header>
 
 <!-- HERO -->
 <section id="home" class="hero">
-  <div class="container">
-    <h1>MS. UWIMPUHWE GISELE</h1>
-    <p>Electronics and Telecommunication Engineer | Inventory Clerk</p>
-    <a href="#contact" class="btn">Hire Me</a>
-  </div>
+    <h1>Uwimpuhwe Gisele</h1>
+    <p>Electronics & Telecommunication Engineer | Inventory Clerk</p>
+    <p>Designing and troubleshooting electronic systems and telecom networks.</p>
+    <div class="buttons">
+        <button>Hire Me</button>
+        <button class="outline">Download Resume</button>
+    </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-  <div class="container">
     <h2>About Me</h2>
     <p>
-      I’m Gisele Uwimpuhwe, passionate in Electronics and Telecommunication 
-      with expertise in electronic system design, PCB layout, embedded programming, 
-      and troubleshooting.
+        I’m Gisele Uwimpuhwe, passionate in Electronics and Telecommunication 
+        with expertise in PCB design, embedded programming, and telecom systems.
     </p>
-  </div>
+</section>
+
+<!-- EDUCATION -->
+<section>
+    <h2>Education</h2>
+    <p>Bachelor in Electronics and Telecommunication Technology</p>
+
+    <h3>Certifications</h3>
+    <ul>
+        <li>Soft Skills Certificate - Rwanda Polytechnic & Kepler</li>
+        <li>Design Sprint Camp - UNESCO Unitwin</li>
+    </ul>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
-  <div class="container">
+<section>
     <h2>Skills</h2>
+    <div class="grid">
+        <div class="card">HTML / CSS / Figma</div>
+        <div class="card">MATLAB / Proteus</div>
+        <div class="card">PCB Design</div>
+        <div class="card">Embedded Systems</div>
+        <div class="card">Wireless Tech (IoT, GSM)</div>
+        <div class="card">Networking</div>
+    </div>
+</section>
 
-    <p>HTML / CSS</p>
-    <p>PCB Design</p>
-    <p>Embedded Systems</p>
-    <p>Networking</p>
-
-  </div>
+<!-- EXPERIENCE -->
+<section>
+    <h2>Work Experience</h2>
+    <div class="card">
+        <h3>Inventory Clerk - CHUK</h3>
+        <p>Kigali | 2026</p>
+    </div>
+    <div class="card">
+        <h3>Intern - Ruliba Clays</h3>
+        <p>Rugende | 2025</p>
+    </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <div class="container">
     <h2>Projects</h2>
-
-    <p>IoT Smart Waste Collection</p>
-    <p>Indoor Air Monitoring System</p>
-    <p>Product Subscription Web Page</p>
-
-  </div>
+    <div class="grid">
+        <div class="card">IoT Smart Waste Bin</div>
+        <div class="card">Indoor Air Monitoring System</div>
+        
+    </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="container">
-    <h2>Contact</h2>
-
+    <h2>Contact Me</h2>
     <p>Email: jiuwimpuhwe@gmail.com</p>
     <p>Phone: +250 782955980</p>
-    <p>Kigali, Rwanda</p>
+    <p>Location: Kigali, Rwanda</p>
 
-  </div>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Message"></textarea>
+        <button>Send Message</button>
+    </form>
 </section>
 
-<!-- JS -->
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Uwimpuhwe Gisele</p>
+</footer>
 <script src="script.js"></script>
-
 </body>
 </html>

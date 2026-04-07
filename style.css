@@ -1,0 +1,293 @@
+/* ===================== RESET ===================== */
+* ,*::before, *::after
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* ===================== BODY ===================== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* ===================== CONTAINER ===================== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===================== NAVBAR ===================== */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1000;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.nav-links a.active {
+  color: #2563eb;
+}
+
+/* HAMBURGER */
+#hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ===================== HERO ===================== */
+.hero {
+  padding: 120px 0 80px;
+  text-align: center;
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: white;
+  color: #2563eb;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e2e8f0;
+}
+
+/* ===================== SECTIONS ===================== */
+section {
+  padding: 80px 0;
+}
+
+/* HEADINGS */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* ===================== ABOUT ===================== */
+.about-inner {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  color: #475569;
+}
+
+/* ===================== SKILLS ===================== */
+.skills-wrap {
+  display: grid;
+  gap: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.skill {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.skill p {
+  font-weight: 500;
+}
+
+.skill-bar {
+  height: 8px;
+  background: #e2e8f0;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.skill-fill {
+  height: 100%;
+  width: 0;
+  background: #2563eb;
+  border-radius: 10px;
+  transition: width 1s ease;
+}
+
+/* ===================== PROJECTS ===================== */
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===================== CONTACT ===================== */
+.contact-inner {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  gap: 15px;
+}
+
+/* INPUTS */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #2563eb;
+}
+
+/* TEXTAREA */
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* BUTTON SEND */
+.btn-send {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-send:hover {
+  background: #1d4ed8;
+}
+
+/* SUCCESS MESSAGE */
+#formSuccess {
+  display: none;
+  background: #22c55e;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* ===================== FADE ANIMATION ===================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    background: white;
+    flex-direction: column;
+    display: none;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .section-header h2 {
+    font-size: 22px;
+  }
+}
